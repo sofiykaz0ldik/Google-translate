@@ -30,9 +30,11 @@ body {
 
 .lang-block {
     display: flex;
+    flex-wrap: wrap;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden; /*обрезает лишнее*/
     border: 1px solid #dfe1e5;
+    
 }
 
 .lang-block button {
@@ -42,6 +44,8 @@ body {
     background-color: white;
     color: #1663c7;
     font-size: 15px;
+    flex: 1 1 auto;
+    min-width: 60px;
 }
 
 .lang-block button:hover {
@@ -50,7 +54,7 @@ body {
 
 .swap-block {
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
 }
 
@@ -109,4 +113,19 @@ body {
 }
 .swap-block button:active {
     transform: rotate(180deg);
+}
+.api-note {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.api-note a {
+    color: #1a73e8;
+    text-decoration: none; /*не подчеркивая*/
+}
+
+.api-note a:hover {
+    text-decoration: underline; /*подчеркивая при навед*/
 }

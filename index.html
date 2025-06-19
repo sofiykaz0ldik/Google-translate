@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Translate</title>
     <link rel="stylesheet" href="translate.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -9,6 +10,35 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+    <div class="form-wrapper">
+        <div class="form">
+            <div class="output-row">
+                <div class="lang-block first-lang">
+                    <button class="define-lang">Определить язык</button>
+                    <button class="lang-btn active" data-lang="ru">Русский</button>
+                    <button class="lang-btn" data-lang="en">Английский</button>                
+                </div>
+                <div class="swap-block">
+                    <button class="swap-btn"></button>
+                </div>
+                <div class="lang-block second-lang">
+                    <button class="lang-btn" data-lang="ru">Русский</button>
+                    <button class="lang-btn active" data-lang="en">Английский</button>
+                </div>
+            </div>
+            <div class="input-trans">
+                <div class="block block-input">
+                    <input type="text" class="text-input" placeholder="Введите текст">
+                </div>
+                <div class="block block-output">
+                    <input type="text" class="text-output" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="api-note">
+    <a href="https://cloud.google.com/translate/docs/reference/rest" target="_blank">Google Translate API</a>
+    </div>
+    </div>
     <script src="translate.js"></script>
 </body>
 </html>
